@@ -9,6 +9,7 @@ import appCss from '../styles.css?url'
 import type { QueryClient } from '@tanstack/react-query'
 import { Toaster } from '#/components/ui/sonner';
 import { ThemeProvider } from '#/providers/theme-provider';
+import { RootWrapper } from '#/components/root-wrapper';
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -35,6 +36,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       },
     ],
   }),
+  component: RootWrapper,
   shellComponent: RootDocument,
 });
 

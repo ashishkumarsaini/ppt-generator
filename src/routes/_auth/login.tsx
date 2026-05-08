@@ -1,4 +1,4 @@
-import { createFileRoute, useSearch } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 
 import { LoginForm } from '#/components/auth/login-form.tsx'
 import z from 'zod'
